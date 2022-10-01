@@ -11,6 +11,12 @@
 		BEA0E03328E7B95500A75E44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E03228E7B95500A75E44 /* ContentView.swift */; };
 		BEA0E03528E7B95700A75E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA0E03428E7B95700A75E44 /* Assets.xcassets */; };
 		BEA0E03828E7B95700A75E44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA0E03728E7B95700A75E44 /* Preview Assets.xcassets */; };
+		BEA0E04228E8307100A75E44 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E04128E8307100A75E44 /* Credentials.swift */; };
+		BEA0E04428E8308800A75E44 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E04328E8308800A75E44 /* ApiService.swift */; };
+		BEA0E04628E8309E00A75E44 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E04528E8309E00A75E44 /* UIApplication+Extension.swift */; };
+		BEA0E04828E834BA00A75E44 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E04728E834BA00A75E44 /* LoginViewModel.swift */; };
+		BEA0E04A28E8965E00A75E44 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E04928E8965E00A75E44 /* LoginView.swift */; };
+		BEA0E05028E89F1C00A75E44 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0E04F28E89F1C00A75E44 /* Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		BEA0E03228E7B95500A75E44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEA0E03428E7B95700A75E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEA0E03728E7B95700A75E44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEA0E04128E8307100A75E44 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		BEA0E04328E8308800A75E44 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		BEA0E04528E8309E00A75E44 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		BEA0E04728E834BA00A75E44 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BEA0E04928E8965E00A75E44 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BEA0E04F28E89F1C00A75E44 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				BEA0E03028E7B95500A75E44 /* RandomAPISwiftUIApp.swift */,
-				BEA0E03228E7B95500A75E44 /* ContentView.swift */,
+				BEA0E04F28E89F1C00A75E44 /* Authentication.swift */,
+				BEA0E04028E82FC200A75E44 /* Views */,
+				BEA0E03F28E82FB900A75E44 /* Models */,
+				BEA0E03E28E82F9C00A75E44 /* Services */,
 				BEA0E03428E7B95700A75E44 /* Assets.xcassets */,
 				BEA0E03628E7B95700A75E44 /* Preview Content */,
 			);
@@ -65,6 +80,33 @@
 				BEA0E03728E7B95700A75E44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEA0E03E28E82F9C00A75E44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0E04328E8308800A75E44 /* ApiService.swift */,
+				BEA0E04528E8309E00A75E44 /* UIApplication+Extension.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BEA0E03F28E82FB900A75E44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0E04128E8307100A75E44 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEA0E04028E82FC200A75E44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0E03228E7B95500A75E44 /* ContentView.swift */,
+				BEA0E04728E834BA00A75E44 /* LoginViewModel.swift */,
+				BEA0E04928E8965E00A75E44 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA0E04228E8307100A75E44 /* Credentials.swift in Sources */,
+				BEA0E04A28E8965E00A75E44 /* LoginView.swift in Sources */,
 				BEA0E03328E7B95500A75E44 /* ContentView.swift in Sources */,
+				BEA0E04828E834BA00A75E44 /* LoginViewModel.swift in Sources */,
+				BEA0E04428E8308800A75E44 /* ApiService.swift in Sources */,
+				BEA0E04628E8309E00A75E44 /* UIApplication+Extension.swift in Sources */,
 				BEA0E03128E7B95500A75E44 /* RandomAPISwiftUIApp.swift in Sources */,
+				BEA0E05028E89F1C00A75E44 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
